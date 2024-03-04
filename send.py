@@ -1,7 +1,7 @@
 import http.client
 import json
 
-API_KEY = "App f061d81db195515f3f02ce30b88111cf-730b1533-f863-45f4-b814-e4d72ced11ca"
+API_KEY = "App f061d81db195515f3f02ce30b88111cf-730b1533-f863-45f4-b814-apikey"
 
 conn = http.client.HTTPSConnection("1jddn.api.infobip.com")
 payload = json.dumps({
@@ -9,7 +9,7 @@ payload = json.dumps({
         {
             "destinations": [
                 {
-                    "to": "254720032567"
+                    "to": "Phone_number"
                 }
             ],
             "from": "StimaSacco",
